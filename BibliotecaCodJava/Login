@@ -26,8 +26,7 @@ public class Login {
     }
 
     public boolean authenticate() {
-        // Aquí puedes agregar la lógica de autenticación
-        // Por ejemplo, comparar con valores almacenados en una base de datos
+        
         return "admin".equals(username) && "admin".equals(password);
     }
 
