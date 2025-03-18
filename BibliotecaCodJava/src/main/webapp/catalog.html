@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS | Biblioteca Infantil</title>
+</head>
+<body>
+<!--background-->
+<div class="border-b border-gray-200 py-4">
+    <style>
+        body {
+            background-image: url('images/backgrounds/bg_lgn_img.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+  </div>
+</div>
+<!-- recuadro flotante-->
+    <div style="position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 100vh;
+                width: 80%;
+                background: #FFF;
+                padding: 30px;
+                border: 1px solid #D9D9D9;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;">
+         <!-- Etiqueta de Logo-->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+            <!-- Logo -->
+            <div style="display: flex; align-items: center;">
+                <img src="images/logo/logo.svg" alt="Logo" style="width:auto; height: 32px;">
+            </div>
+            <!-- Erase Text and Search bar group -->
+            <div style="display: flex; align-items: center;">
+                <!-- Erase Text -->
+                <button
+                    style="
+                    border: none;
+                    background: none;"
+                    onmouseover="this.style.color='darkgray'"
+                    onmouseout="this.style.color='black'"
+                ><i class="fa fa-times" aria-hidden="true"></i></button>
+                <!-- Search bar -->
+                <input type="text" placeholder="Anota el nombre del libro / ISBN" 
+                    style="
+                    border-radius: 20px;
+                    border: 1px solid #D9D9D9;
+                    background: #ffffff;
+                    height: 18px;
+                    width: 250px;
+                    padding: 8px 10px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    ">
+                <!-- Botón busqueda -->
+                <button
+                    style="border: none;
+                    background: none;"
+                    onmouseover="this.style.color='darkgray'"
+                    onmouseout="this.style.color='black'"
+                ><i class="fa fa-search"></i></button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
