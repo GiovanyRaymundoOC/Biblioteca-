@@ -3,6 +3,8 @@ package modelo;
 import org.json.JSONObject;
 
 public class Usuario {
+    
+    // Atributos
     private int idUsuario;
     private Institucion institucion;
     private Credencial credencial;
@@ -10,26 +12,59 @@ public class Usuario {
     private RolUsuario rol;
     private JSONObject configuracionAccesibilidad;
 
-    public enum RolUsuario { ADMIN, BIBLIOTECARIO, USUARIO }
+    // Enumeración para los roles de usuario
+    public enum RolUsuario { 
+        ADMIN, 
+        BIBLIOTECARIO, 
+        USUARIO 
+    }
 
-    // Getters y Setters CORRECTOS
-    public int getIdUsuario() { return idUsuario; }
-    public void setIdUsuario(int idUsuario) { this.idUsuario = idUsuario; }
+    // Getters y Setters
+    public int getIdUsuario() { 
+        return idUsuario; 
+    }
 
-    public Institucion getInstitucion() { return institucion; }
-    public void setInstitucion(Institucion institucion) { this.institucion = institucion; }
+    public void setIdUsuario(int idUsuario) { 
+        this.idUsuario = idUsuario; 
+    }
 
-    public Credencial getCredencial() { return credencial; }
-    public void setCredencial(Credencial credencial) { this.credencial = credencial; }
+    public Institucion getInstitucion() { 
+        return institucion; 
+    }
 
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    public void setInstitucion(Institucion institucion) { 
+        this.institucion = institucion; 
+    }
 
-    public RolUsuario getRol() { return rol; }
-    public void setRol(RolUsuario rol) { this.rol = rol; }
+    public Credencial getCredencial() { 
+        return credencial; 
+    }
 
-    public JSONObject getConfiguracionAccesibilidad() { return configuracionAccesibilidad; }
-    public void setConfiguracionAccesibilidad(JSONObject configuracionAccesibilidad) {
-        this.configuracionAccesibilidad = configuracionAccesibilidad;
+    public void setCredencial(Credencial credencial) { 
+        this.credencial = credencial; 
+    }
+
+    public String getNombre() { 
+        return nombre; 
+    }
+
+    public void setNombre(String nombre) { 
+        this.nombre = nombre; 
+    }
+
+    public RolUsuario getRol() { 
+        return rol; 
+    }
+
+    public void setRol(RolUsuario rol) { 
+        this.rol = rol; 
+    }
+
+    public JSONObject getConfiguracionAccesibilidad() { 
+        return configuracionAccesibilidad; 
+    }
+
+    public void setConfiguracionAccesibilidad(JSONObject configuracionAccesibilidad) { 
+        this.configuracionAccesibilidad = configuracionAccesibilidad; 
     }
 }
