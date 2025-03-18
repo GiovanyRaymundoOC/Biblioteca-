@@ -49,9 +49,10 @@
                     background: none;"
                     onmouseover="this.style.color='darkgray'"
                     onmouseout="this.style.color='black'"
+                    onclick="document.querySelector('input[type=searchbar]').value='';"
                 ><i class="fa fa-times" aria-hidden="true"></i></button>
                 <!-- Search bar -->
-                <input type="text" placeholder="Anota el nombre del libro / ISBN" 
+                <input type="searchbar" placeholder="Anota el nombre del libro / ISBN" 
                     style="
                     border-radius: 20px;
                     border: 1px solid #D9D9D9;
@@ -71,6 +72,30 @@
                 ><i class="fa fa-search"></i></button>
             </div>
             </div>
+        </div>
+
+        <!-- User_profile -->
+        <!-- Circular button with shadow and icon inside -->
+        <div style="position: absolute; bottom: 20px; right: 20px;">
+            <button
+                style="
+                width: 75px;
+                height: 75px;
+                border-radius: 50%;
+                border: none;
+                background-color: #3f2e35;
+                color: white;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                cursor: pointer;"
+                onmouseover="this.style.backgroundColor='#3f2e35'"
+                onmouseout="this.style.backgroundColor='#462d36'"
+            >
+            <i class="fa fa-user" aria-hidden="true"></i>
+            </button>
         </div>
     </div>
 
