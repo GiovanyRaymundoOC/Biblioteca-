@@ -7,10 +7,21 @@
 </head>
 
 <!-- Fuente-->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="""stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
   body {
     font-family: 'Roboto', sans-serif;
+    color: #000;
+  }
+
+  /* Heading */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--sds-typography-heading-font-family);
+    font-size: var(--sds-typography-heading-size-base);
+    font-style: normal;
+    font-weight: var(--sds-typography-heading-font-weight);
+    line-height: 120%; /* 28.8px */
+    letter-spacing: -0.48px;
   }
 </style>
 <body>
@@ -26,11 +37,13 @@
             background-position: center;
             height: 100vh;
             margin: 0;
+            overflow: hidden;
         }
     </style>
-    </div>
+  </div>
 <!-- recuadro flotante-->
-  <div style="position:relative; 
+  <div style="position:relative;
+              top: 25%; 
                 size: cover;
                 background: #FFF;
                 padding: 30px; 
@@ -84,12 +97,14 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: background-color 0.2s ease;
         font-family: 'Roboto', sans-serif;"
-        onmouseover="this.style.backgroundColor='#262626';"
+        onmouseover="this.style.backgroundColor='#505050';"
         onmouseout="this.style.backgroundColor='black';"
         >Iniciar Sesión
       </button>
       </div>
+<!--Olvidaste tu contraseña-->
 
+<!--Registro-->
   </div>
     
 </body>
