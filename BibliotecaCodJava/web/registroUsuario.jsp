@@ -4,21 +4,20 @@
     <title>Registro de Usuario</title>
 </head>
 <body>
-    <h1>Registrar Nuevo Usuario</h1>
+    <h1>Registro de Nuevo Usuario</h1>
     <form action="RegistroUsuarioServlet" method="post">
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" required><br>
-        <label for="email">Email:</label>
+        <label for="email">Correo Electrónico:</label>
         <input type="email" name="email" required><br>
         <label for="password">Contraseña:</label>
         <input type="password" name="password" required><br>
-        <label for="rol">Rol:</label>
-        <select name="rol">
-            <option value="ADMIN">Administrador</option>
-            <option value="BIBLIOTECARIO">Bibliotecario</option>
-            <option value="USUARIO">Usuario</option>
-        </select><br>
-        <button type="submit">Registrar</button>
+        <input type="hidden" name="rol" value="USUARIO"> <!-- Rol fijo como 'USUARIO' -->
+        <button type="submit">Registrarse</button>
     </form>
+    <p>¿Ya tienes una cuenta? <a href="login.jsp">Inicia sesión aquí</a></p>
+    <c:if test="${not empty error}">
+        <p style="color: red;">${error}</p>
+    </c:if>
 </body>
 </html>

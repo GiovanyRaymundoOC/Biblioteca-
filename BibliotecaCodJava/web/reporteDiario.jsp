@@ -5,7 +5,7 @@
     <title>Reporte Diario</title>
 </head>
 <body>
-    <h1>Préstamos del Día</h1>
+    <h1>Reporte Diario de Préstamos</h1>
     <form method="get" action="ReporteDiarioServlet">
         <label for="fecha">Seleccionar Fecha:</label>
         <input type="date" name="fecha" value="${fecha}" required>
@@ -35,5 +35,8 @@
             </c:forEach>
         </tbody>
     </table>
+    <c:if test="${not empty error}">
+        <p style="color: red;">${error}</p>
+    </c:if>
 </body>
 </html>

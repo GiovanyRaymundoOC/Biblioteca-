@@ -24,7 +24,6 @@
                     <td>${usuario.rol}</td>
                     <td>${usuario.credencial.email}</td>
                     <td>
-                        <a href="detalleUsuario.jsp?id=${usuario.idUsuario}">Ver Detalle</a> |
                         <a href="editarUsuario.jsp?id=${usuario.idUsuario}">Editar</a>
                     </td>
                 </tr>
@@ -32,5 +31,8 @@
         </tbody>
     </table>
     <a href="registroUsuario.jsp">Registrar Nuevo Usuario</a>
+    <c:if test="${not empty error}">
+        <p style="color: red;">${error}</p>
+    </c:if>
 </body>
 </html>

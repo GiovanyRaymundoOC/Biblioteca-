@@ -24,13 +24,11 @@
                     <td>${libro.autor}</td>
                     <td><img src="${libro.portadaUrl}" alt="Portada" width="50"></td>
                     <td>
-                        <a href="detalleLibro.jsp?isbn=${libro.isbn}">Ver Detalle</a> |
-                        <a href="editarLibro.jsp?isbn=${libro.isbn}">Editar</a>
+                        <a href="detalleLibro.jsp?isbn=${libro.isbn}">Ver Detalle</a>
                     </td>
                 </tr>
             </c:forEach>
         </tbody>
     </table>
-    <a href="agregarLibro.jsp">Agregar Nuevo Libro</a>
 </body>
 </html>
